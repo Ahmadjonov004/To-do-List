@@ -5,11 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
      <link rel="stylesheet" href="./css/style.css">
+     <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <title>To do List</title>
 </head>
 <body>
-        <h1>asilbek</h1>
+    <div class="todo-list-wrap">
+        <div class="main-title">To Do List</div>
+        <div class="adding-input-field">
+            <input type="text" id="task-input" placeholder="Enter task...">
+            <span id="add-item">+</span>
+        </div>
+        <div class="message" id="message"></div>
+        <ul id="ul-items">
 
+        </ul>
+    </div>
+
+    <div class="delete-modal" id="delete-modal">
+        <div class="modal-title">Rostan ham o'chirsizmi?</div>
+        <div class="task"></div>
+        <div class="actions">
+            <button id="close-modal-item">Bekor qilish</button>
+            <button id="delete-modal-item">O'chirish</button>
+        </div>
+    </div>
+    <div class="edit-modal" id="edit-modal">
+        <div class="modal-title">Tahrirlash</div>
+        <input type="text" class="edit-input" id="edit-input">
+        <div class="actions">
+            <button id="close-modal-edit">Bekor qilish</button>
+            <button id="save-modal-item">Saqlash</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
     <script src="./js/script.js"></script>
 </body>
 </html>
